@@ -1,0 +1,41 @@
+.order {
+  padding: 2rem 3rem;
+}
+
+.order > h2 {
+  font-weight: 700;
+}
+
+.order .order-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+}
+
+.order .order-container .order-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+
+.order .order-container .order-header .order-id {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order-header > h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.order-id > h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.order-id > p {
+  font-size: 0.9rem;
+}

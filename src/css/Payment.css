@@ -1,0 +1,115 @@
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.payment h1 {
+  color: #111;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 0.6rem;
+  transition: color 0.3s ease;
+}
+
+.payment h1:hover {
+  color: blue;
+}
+
+.payment .payment-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 90%;
+  height: fit-content;
+  padding: 1.2rem;
+}
+
+.payment-add,
+.payment-products,
+.payment-method {
+  display: flex;
+  padding: 1.2rem;
+  margin: -5px 1.2rem;
+  border-bottom-width: 1px;
+  border-bottom-color: lightgray;
+}
+
+.payment-add h4,
+.payment-products h4,
+.payment-method h4 {
+  flex: 0.4;
+}
+
+.payment-add .add-details,
+.payment-products .checkout-products,
+.payment-method .card-detail {
+  flex: 0.8;
+}
+
+.payment-add .add-details {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.payment-products .checkout-products .cart-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.payment-products .checkout-products .cart-item button {
+  cursor: pointer;
+}
+
+.payment-method .card-detail .payment-amount {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  margin-top: 1rem;
+  border: 1px solid lightgray;
+}
+
+.payment-method .card-detail .payment-amount h4 {
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.payment-method .card-detail .payment-amount button {
+  color: #111;
+  width: 100%;
+  height: 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+}
+
+.payment-method .card-detail .payment-amount button[class="disable-btn"] {
+  width: 100%;
+  height: 1.6rem;
+  font-size: 0.9rem;
+  cursor: default;
+  font-weight: 500;
+  border-radius: 2px;
+  background-color: #eed9a3;
+  border: 1px solid #dabc71;
+  color: rgb(116, 116, 116);
+}
+
+.payment-method .card-detail .card-number {
+  width: 65%;
+  margin-top: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.payment-method .card-detail .payment-error {
+  color: #ff0033;
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 13px;
+  transition: all 0.3s ease-in-out;
+}
