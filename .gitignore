@@ -7,11 +7,13 @@
 
 # testing
 /coverage
-
+/functions
 /README.md
 
 # production
 /build
+.firebaserc
+firebase.json
 
 # misc
 .DS_Store
